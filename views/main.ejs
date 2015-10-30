@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/styles/material.min.css'>
+    <link rel='stylesheet' href='/styles/style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"><a href='/' class='menu-heading'>DigitalFoodOne</a></span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="/motor">Motor</a>
+            <a class="mdl-navigation__link" href="/photo">Photo</a>
+            <a class="mdl-navigation__link" href="/system">System</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <%- body %>
+        </div>
+    </main>
+</div>
+</body>
+</html>

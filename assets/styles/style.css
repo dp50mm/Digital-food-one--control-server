@@ -1,0 +1,11 @@
+body {
+    background: white;
+}
+
+.page-content {
+    padding:20px;
+}
+
+.menu-heading {
+    color:black !important;
+}
