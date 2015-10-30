@@ -40,12 +40,21 @@ module.exports.connections = {
   * Run: npm install sails-mysql                                             *
   *                                                                          *
   ***************************************************************************/
-  someMysqlServer: {
+  localMysql: {
     adapter: 'sails-mysql',
-    host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
-    user: 'YOUR_MYSQL_USER',
-    password: 'YOUR_MYSQL_PASSWORD',
-    database: 'YOUR_MYSQL_DB'
+    host: 'localhost',
+    port: 8889,
+    user: 'controlServer',
+    password: 'beR5mGe67cSLPxy7',
+    database: 'DigitalFoodOne'
+  },
+  productionMysql: {
+    adapter: 'sails-mysql',
+    host: 'digital-food-one-database.c8j7u2olfabz.eu-central-1.rds.amazonaws.com',
+    port: 3306,
+    user: 'controlserver',
+    password: 'D4$$mondsR433vr.*',
+    database: 'digital_food_one_db'
   },
 
   /***************************************************************************
