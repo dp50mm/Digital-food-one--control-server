@@ -7,7 +7,6 @@
 
 module.exports = {
 	index: function(req, res) {
-		console.log(res);
 		return res.view('system/system', {
 			title: 'systems',
 			layout: 'main'
