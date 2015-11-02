@@ -15,7 +15,7 @@ module.exports = {
 		// });
 		Photo.create({name:'test test'}).exec(function createPhoto(err, created) {
 			console.log(err);
-			//console.log('created photo with name: '+created.name);
+			console.log('created photo with name: '+created.name);
 		});
 		return res.view('photo/photography', {
 			title:'Photography',
