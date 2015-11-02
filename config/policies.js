@@ -26,7 +26,7 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  // '*': true,
+   '*': false,
 
   /***************************************************************************
   *                                                                          *
@@ -48,4 +48,19 @@ module.exports.policies = {
 		// before letting any users feed our rabbits
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
+	//
+
+    AuthController: {
+        '*':true,
+    },
+
+    MotorController: {
+        '*':'isLoggedIn',
+    },
+    PhotoController: {
+        '*':'isLoggedIn',
+    },
+    SystemController: {
+        '*':'isLoggedIn',
+    },
 };
