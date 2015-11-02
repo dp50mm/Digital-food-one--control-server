@@ -7,6 +7,10 @@
 
 module.exports = {
 	index: function(req, res) {
+
+		Photo.create({name:'test test'}).exec(function createPhoto(err, created) {
+			console.log('created photo with name: '+created.name);
+		});
 		return res.view('photo/photography', {
 			title:'Photography',
 			layout:'main'

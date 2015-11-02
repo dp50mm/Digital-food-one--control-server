@@ -55,12 +55,12 @@ module.exports.policies = {
     },
 
     MotorController: {
-        '*':'isLoggedIn',
+        '*':true,
     },
     PhotoController: {
-        '*':'isLoggedIn',
+        '*':true,
     },
     SystemController: {
-        '*':'isLoggedIn',
+        '*':true,
     },
 };
