@@ -7,12 +7,12 @@
 
 module.exports = {
 	index: function(req, res) {
-		console.log(Photo);
-		Photo.find({name:'test test'}).exec(function findCB(err, found) {
-			while(found.length) {
-				console.log('Found photo with name: '+found.pop().name);
-			}
-		});
+		console.log(Photo.connections.productionMysql);
+		// Photo.find({name:'test test'}).exec(function findCB(err, found) {
+		// 	while(found.length) {
+		// 		console.log('Found photo with name: '+found.pop().name);
+		// 	}
+		// });
 		// Photo.create({name:'test test'}).exec(function createPhoto(err, created) {
 		// 	console.log('created photo with name: '+created.name);
 		// });
